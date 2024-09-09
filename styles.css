@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    user-select: none;
+}
+
+body {
+    color: #ffffff;
+    background: #1d1f24;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+
+.text-center {
+    text-align: center;
+}
+
+
+.game-content {
+    margin-top: 20px;
+    border-top: 1px solid orange;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding:10px;
+}
+
+.status {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30%;
+    align-items: center;
+}
+
+.level {
+    display: flex;
+}
+
+.profph {
+    padding: 10px;
+    background: #2a292e;
+    width: 50%;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.profph img {
+    display: inline;
+    width: 15%;
+}
+
+.profph div {
+    text-align: center;
+    margin-right: 15px;
+    margin-left: 15px;
+    width: 50%;
+    display: inline;
+}
+
+
+.game-content img {
+    width: 70%;
+    display: block;
+    margin: auto;
+}
+
+.game-content .balance {
+    width: 100%;
+    font-size: 50px;
+    margin: auto;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.game-content .feed {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    gap: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.game-content .feed .card {
+    width: 25%;
+    background: #2a292e;
+    padding: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card h6 {
+    color: #8a898e;
+}
+
+.bottom-menu {
+    display: flex;
+    background: #2a292e;
+    padding: 10px;
+    width: 100%;
+    position:fixed;
+    text-align: center;
+    bottom: 0;
+    
+}
+
+.bottom-menu .link {
+    width: 25%;
+    padding: 10px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.bottom-menu .active {
+    background: #1d1f24;
+}
+
+
+
+.bottom-menu img {
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+.circle {
+    position: relative;
+}
+
+.circle img {
+    border-radius: 50%;
+    box-shadow: 0px 0px 16px 0px rgba(138, 143, 254, 0.05);
+    transition: transform 0.2s ease;
+    --tiltX: 0deg;
+    --tiltY: 0deg;
+    transform: rotateX(var(--tiltX)) rotateY(var(--tiltY));
+}
+  
+.plus-one {
+    position: absolute;
+    font-family: Inter;
+    text-shadow: 0px 0px 4px rgba(234, 182, 64, 0.25);
+    font-size: 34px;
+    font-weight: 800;
+    background: #ffffff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    pointer-events: none;
+    user-select: none;
+    animation: move-up 2s forwards;
+}
+
+
+@keyframes move-up {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  
+    100% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+}
